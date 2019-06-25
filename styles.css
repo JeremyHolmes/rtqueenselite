@@ -5,15 +5,31 @@
 
 .hero {
   /*Photo from Unsplash, don't be lame-look up photog for credit */
-  background:  url("./assets/bg_image_2_OVRLY_1143X1024.jpg") no-repeat center center;
-  background-size: cover;
+  /*background:  url("./assets/bg_image_2_1143X1024.jpg") no-repeat center;
+  background-size: cover;*/
   padding: 4rem 2rem;
   height: 100vh;
   margin: 0;
+  position: relative;
   /*grid styles*/
 display: grid;
 align-items: center;
+text-align: center;
 grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+}
+
+.hero::before {
+  background:  url("./assets/bg_image_2_1143X1024.jpg") no-repeat center;
+  background-size: cover;
+  content:"";
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.5;
 }
 
 /* Button, place holder for instagram link*/
