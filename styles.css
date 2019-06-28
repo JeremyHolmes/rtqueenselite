@@ -4,9 +4,6 @@
 }
 
 .hero {
-  /*Photo from Unsplash, don't be lame-look up photog for credit */
-  /*background:  url("./assets/bg_image_2_1143X1024.jpg") no-repeat center;
-  background-size: cover;*/
   padding: 4rem 2rem;
   height: 100vh;
   margin: 0;
@@ -19,6 +16,7 @@ grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
 }
 
 .hero::before {
+  /*Photo from Unsplash, don't be lame-look up photog for credit */
   background:  url("./assets/bg_image_2_1143X1024.jpg") no-repeat center;
   background-size: cover;
   content:"";
