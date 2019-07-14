@@ -109,6 +109,18 @@ footer {
   text-align: center;
   font-size: .75rem;
 }
+/* 
+#mission {
+Add a background image, maybe(?) 
+}*/
+
+#coach {
+  background-color: lightgray;
+}
+
+#contact {
+  background-color: lightgray;
+}
 
 /*
 h1 {
