@@ -15,9 +15,9 @@ text-align: center;
 grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
 }
 
-.hero::before {
+.overlay::before {
   /*Photo from Unsplash, don't be lame-look up photog for credit */
-  background:  url("./assets/bg_image_2_1143X1024.jpg") no-repeat center;
+  background: url("./assets/bg_image_2_1143X1024.jpg") no-repeat center;
   background-size: cover;
   content:"";
   display: block;
@@ -30,22 +30,7 @@ grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   opacity: 0.5;
 }
 
-/* Button, place holder for instagram link*/
-a {
-  background-color: rgba(88, 8, 88, 0.795);
-  text-decoration: none;
-  color: white;
-  border-radius: .25rem;
-  text-align: center;
-  display: inline-block;
-  transition: all .3s;
-}
-
-a:hover {
-  opacity: .6;
-}
-
-.hero > h1 {
+ h1 {
   font-family: 'Racing Sans One';
   font-size: 5rem;
   padding-bottom: 1rem;
@@ -60,10 +45,71 @@ a:hover {
 }
 
 .hero > article > a {
+  background-color: rgba(88, 8, 88, 0.795);
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
   padding: 1rem 3rem;
   margin-top: .75rem;
   font-family: 'Open Sans', sans-serif;
 }
+
+.hero > article >a:hover {
+  opacity: .6;
+}
+
+.sections {
+  padding: 4rem 2rem;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  /*grid styles*/
+display: grid;
+align-items: center;
+text-align: center;
+grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+}
+
+nav{
+ width: 100vw;
+}
+
+.menu > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > ul >li{
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 1.5rem;
+}
+
+.menu > ul > li > a {
+text-decoration: none;
+color: black;
+padding: 1vw;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.5rem;
+font-weight: 200;
+}
+
+/*.menu > ul > li > a:hover {
+background-color: rgba(88, 8, 88, 0.795);
+}*/
+
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: .75rem;
+}
+
 /*
 h1 {
     font-family: 'Racing Sans One', ;
