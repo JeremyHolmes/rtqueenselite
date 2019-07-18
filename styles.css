@@ -102,13 +102,35 @@ font-weight: 200;
 background-color: rgba(88, 8, 88, 0.795);
 }*/
 
-footer {
-  background-color: #333;
-  padding: .75rem;
-  color: #ffffff;
-  text-align: center;
-  font-size: .75rem;
+/*change layout of navbar on screen width less/equal to 500px*/
+
+@media only screen and (max-width: 500px) {
+  ul{
+    flex-direction: column;
+  }
+  li{
+    margin: 0;
+  }
+  a{
+    display: block;
+  }
+  .nav-button{
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #AFE0FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-start;
+  }
 }
+
+.nav-button {
+ display: none;
+}
+
+
 /* 
 #mission {
 Add a background image, maybe(?) 
@@ -122,6 +144,13 @@ Add a background image, maybe(?)
   background-color: lightgray;
 }
 
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: .75rem;
+}
 /*
 h1 {
     font-family: 'Racing Sans One', ;
